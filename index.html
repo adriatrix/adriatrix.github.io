@@ -39,7 +39,7 @@
 
     <!-- start of navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="ag-navbar" style="background-color: black;">
-      <a class="navbar-brand" href="#section-home">
+      <a class="navbar-brand my-links" href="#section-home">
         <img class="navbar-brand-link" src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50">
       </a>
       <button class="navbar-toggler btn btn-lg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -159,22 +159,75 @@
       <div class="works-text p-2">
         <div class="row justify-content-md-center">
           <div class="col">
-            <h2 class="h4 works-title"><span class="h5">My</span> Work</h2>
+            <h2 class="h4"><span class="h5">My</span> Work</h2>
           </div>
-        </div>
-        <div class="row justify-content-md-center my-subtext my-1">
-          <div class="col works-desc-container px-5">
-            <p class="works-desc"></p>
-          </div>
-        </div>
-        <div class="row my-subtext">
-          <div class="col h4"><a class="btn btn-lg text-secondary btn-outline-light" id="btnOver" target="_blank" href="https://team-overbreak.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 1</a></div>
-          <div class="col h4"><a class="btn btn-lg text-secondary btn-outline-light" id="btnPop" target="_blank" href="https://adriatrix-csp2.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 2</a></div>
-          <div class="col h4"><a class="btn btn-lg text-secondary btn-outline-light" id="btnCube" target="_blank" href="https://a-cube.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> project 3</a></div>
         </div>
       </div>
     </div>
     <!-- end of #section-works -->
+
+    <!-- start of #section-projects -->
+    <div id="section-projects" class="projects-image">
+      <div class="row">
+        <div class="col">
+          &nbsp;
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="card works-container">
+            <div class="card-header">
+              <img src="img/overbreak-image.jpg" alt="OverBreak image" class="works-img" style="width:100%">
+              <div class="works-overlay">
+                <div class="works-desc">
+                  <h5 class="font-weight-bold">OverBreak</h5>
+                  <p class="p-0">My very first static website built on HTML, CSS and Javascript. From someone who just started out in web development, I am proud of what I've created.<br><small>(even though it obviously needs a lot more work to be done).</small></p>
+                  <div class="col h4"><a class="btn btn-sm text-secondary btn-outline-light" target="_blank" href="https://team-overbreak.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> visit site</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title font-weight-bold mt-3">OverBreak</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="card works-container">
+            <div class="card-header">
+              <img src="img/popstop-image.jpg" alt="PopStopShop image" class="works-img" style="width:100%">
+              <div class="works-overlay">
+                <div class="works-desc">
+                  <h5 class="font-weight-bold">PopStopShop</h5>
+                  <p class="p-0">My real-world implementation of a workable E-commerce website.<br>Lovingly built on Bulma CSS framework with a bit of Javascript magic and alot of vanilla PHP.</p>
+                  <div class="col h4"><a class="btn btn-sm text-secondary btn-outline-light" target="_blank" href="https://adriatrix-csp2.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> visit shop</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title font-weight-bold mt-3">PopStopShop</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+          <div class="card works-container">
+            <div class="card-header">
+              <img src="img/cube-image.jpg" alt="Adrian's Cube image" class="works-img" style="width:100%">
+              <div class="works-overlay">
+                <div class="works-desc">
+                  <h5 class="font-weight-bold">Adrian's Cube</h5>
+                  <p class="p-0">What started out as a simple to-do list app has become a full-blown Order Management System (OMS) website.<br>This is my first attempt (nor the last) to use Laravel PHP framework.</p>
+                  <div class="col h4"><a class="btn btn-sm text-secondary btn-outline-light" id="btnCube" target="_blank" href="https://a-cube.000webhostapp.com"><i class="fas fa-external-link-alt fa-2x"></i> visit app</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title font-weight-bold mt-3">Adrian's Cube</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of #section-projects -->
 
     <!-- start of #section-contact -->
     <div id="section-contact" class="contact-image">
@@ -183,7 +236,8 @@
           <div class="col-md-8">
             <form class="g-recaptcha" accept-charset="UTF-8" action="https://usebasin.com/f/88cfc6db015b" enctype="multipart/form-data" method="POST">
               <div class="card text-white bg-dark mb-3">
-                <div class="card-header h4">Let's keep in touch</div>
+                <div class="card-header h4">Feed my addiction. Hire me!</div>
+                <!-- <p>If you like my work and have some cool project to work on, just send me direct message or contact me through social sites listed below.</p> -->
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
