@@ -1,6 +1,11 @@
 $( document ).ready(function() {
     console.log( "script ready!" );
 
+    AOS.init({
+				easing: 'ease-out-back',
+				duration: 1200
+			});
+
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     });
