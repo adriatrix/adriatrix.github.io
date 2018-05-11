@@ -1,6 +1,20 @@
 $( document ).ready(function() {
     console.log( "script ready!" );
 
+    // hide .navbar first
+  	// $(".navbar").hide();
+
+  	// fade in .navbar
+  	// $(function () {
+  	// 	$(window).scroll(function () {
+  	// 		if ($(this).scrollTop() > 100) {
+  	// 			$('.navbar').fadeIn();
+  	// 		} else {
+  	// 			$('.navbar').fadeOut();
+  	// 		}
+  	// 	});
+  	// });
+
     AOS.init({
 				easing: 'ease-out-back',
 				duration: 1200
