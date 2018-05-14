@@ -37,65 +37,47 @@
   <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 </head>
 
-<body data-spy="scroll" data-target="#ag-navbar" data-offset="200">
+<body>
   <div class="container-fluid">
-
-    <!-- start of navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="ag-navbar" style="background-color: black;">
-      <a class="navbar-brand my-links" href="#section-home">
-        <img class="navbar-brand-link" src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50">
-      </a>
-      <button class="navbar-toggler btn btn-lg" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        </ul>
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item text-center">
-            <a class="nav-link my-links" href="#section-about">About<small>Me</small></a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link my-links" href="#section-works"><small>My</small>Work</a>
-          </li>
-          <li class="nav-item text-center">
-            <a class="nav-link my-links" href="#section-contact">Contact<small>Me</small></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- end of navbar -->
-
-    <!-- start of #section-home -->
-    <div id="section-home" class="home-image">
-      <div class="home-text text-grey">
-        <h1 class="h2">Hi, <span class="short-intro">I'm</span><span class="long-intro">my name is</span> <span class="text-white">Adrian</span>.</h1>
-        <span class="my-subtext home-intro">I design and develop beautiful, responsive websites to feed my addiction for coding.</span>
-        <!-- <div class="mt-2" data-aos="zoom-in" data-aos-easing="ease-out" data-aos-once="true" data-aos-anchor="#ag-navbar">
+    <!-- start of #home -->
+    <div id="home" class="home-image">
+      <div class="">
+        <a href="index.html">
+          <img class="my-brand" src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50">
+        </a>
+        <div class="float-right mt-3">
+          <a href="#contact" class="btn my-rounded text-secondary btn-outline-light font-weight-bold my-links" name="button">Say Hi</a>
+        </div>
+        <div class="mt-2" data-aos="fade-up" data-aos-easing="ease-in" data-aos-once="true">
           <a class="home-social-icon" target="_blank" href="https://www.linkedin.com/in/adrian-gacayan-00087514b/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
           <a class="home-social-icon" target="_blank" href="https://plus.google.com/u/0/+AdrianGacayan" title="Google+"><i class="fab fa-google-plus-g"></i></a>
           <a class="home-social-icon" target="_blank" href="https://github.com/adriatrix" title="Github"><i class="fab fa-github-alt"></i></a>
           <a class="home-social-icon" target="_blank" href="https://codepen.io/adriatrix" title="Codepen"><i class="fab fa-codepen"></i></a>
           <a class="home-social-icon" target="_blank" href="https://steamcommunity.com/id/adriatrix/" title="Steam"><i class="fab fa-steam"></i></a>
-        </div> -->
+        </div>
+      </div>
+      <div class="home-text text-grey">
+        <h1 class="h2">Hi, <span class="short-intro">I'm</span><span class="long-intro">my name is</span> <span class="text-white">Adrian</span>.</h1>
+        <span class="my-subtext home-intro">I design and develop beautiful, responsive websites to feed my addiction for coding.</span>
       </div>
       <div id="scrolldownbtn" class="scrollbtn">
-        <a href="#section-about" class="my-links"><span></span></a>
+        <a href="#about" class="my-links"><span></span></a>
       </div>
     </div>
-    <!-- end of #section-home -->
+    <!-- end of #home -->
 
-    <!-- start of #section-about  -->
-    <div id="section-about" class="about-image">
+    <!-- start of #about  -->
+    <div id="about" class="about-image">
       <div class="row about-profile">
         <div class="col">
-          <div class="row justify-content-md-center">
-            <div class="col">
-              <h2 class="h4 works-title">About <span class="h5">Me</span></h2>
+          <div class="row justify-content-center">
+            <div class="col mb-5">
+              <h2 class="h4 my-sectiontext">About <span class="h5">Me</span></h2>
             </div>
           </div>
-          <img src="img/avatar.jpg" alt="Profile Pic" class="my-profile mb-1">
+          <div class="d-flex justify-content-center">
+            <img src="img/avatar.jpg" alt="Profile Pic" class="my-profile mb-1">
+          </div>
           <p class="typewrite my-subtext" data-period="2000" data-type='["Adrian Gacayan", "web developer", "codename: adriatrix", "husband of one, father of three", "self-starter", "non-professional gamer", "anime lover", "rockstar wannabe"]'>
             <span class="wrap">&nbsp;</span>
           </p>
@@ -107,7 +89,7 @@
                     <div class="card-header p-1"><i class="fas fa-expand-arrows-alt fa-3x"></i></div>
                     <div class="card-body p-1">
                       <h5 class="card-title font-weight-bold mt-3">Responsive</h5>
-                      <p class="card-text">I make sure my layouts will work on any device, big or small.</p>
+                      <p class="card-text my-subtext">I make sure my layouts will work on any device, big or small.</p>
                     </div>
                   </div>
                 </div>
@@ -116,7 +98,7 @@
                     <div class="card-header p-1"><i class="fas fa-mobile-alt fa-3x"></i></div>
                     <div class="card-body p-1">
                       <h5 class="card-title font-weight-bold mt-3">Mobile-Friendly</h5>
-                      <p class="card-text">I am a great adherent of mobile first design. </p>
+                      <p class="card-text my-subtext">I am a great adherent of mobile first design. </p>
                     </div>
                   </div>
                 </div>
@@ -125,7 +107,7 @@
                     <div class="card-header p-1"><i class="far fa-lightbulb fa-3x"></i></div>
                     <div class="card-body p-1">
                       <h5 class="card-title font-weight-bold mt-3">Intuitive</h5>
-                      <p class="card-text">I prefer clean content structure and easy-to-use interactions.</p>
+                      <p class="card-text my-subtext">I prefer clean content structure and easy-to-use interactions.</p>
                     </div>
                   </div>
                 </div>
@@ -134,7 +116,7 @@
                     <div class="card-header p-1"><i class="fas fa-rocket fa-3x"></i></div>
                     <div class="card-body p-1">
                       <h5 class="card-title font-weight-bold mt-3">Dynamic</h5>
-                      <p class="card-text">I want to make the web a brighter place to visit, one code at a time.</p>
+                      <p class="card-text my-subtext">I want to make the web a brighter place to visit, one code at a time.</p>
                     </div>
                   </div>
                 </div>
@@ -160,22 +142,22 @@
         </div>
       </div>
     </div>
-    <!-- end of #section-about -->
+    <!-- end of #about -->
 
-    <!-- start of #section-works -->
-    <div id="section-works" class="works-image">
+    <!-- start of #works -->
+    <div id="works" class="works-image">
       <div class="works-text p-2">
         <div class="row justify-content-md-center">
           <div class="col">
-            <h2 class="h4"><span class="h5">My</span> Work</h2>
+            <h2 class="h4 my-sectiontext"><span class="h5">My</span> Work</h2>
           </div>
         </div>
       </div>
     </div>
-    <!-- end of #section-works -->
+    <!-- end of #works -->
 
-    <!-- start of #section-projects -->
-    <div id="section-projects" class="projects-image">
+    <!-- start of #projects -->
+    <div id="projects" class="projects-image">
       <div class="row">
         <div class="col">
           &nbsp;
@@ -237,26 +219,27 @@
           </div>
         </div>
       </div>
+      <hr>
     </div>
-    <!-- end of #section-projects -->
+    <!-- end of #projects -->
 
-    <!-- start of #section-contact -->
-    <div id="section-contact" class="contact-image">
-      <div class="contact-text text-right">
-        <div class="row justify-content-md-center">
+    <!-- start of #contact -->
+    <div id="contact" class="contact-image">
+      <div class="contact-text">
+        <div class="row justify-content-center">
           <div class="col text-center">
-            <h2 class="h4">Contact <span class="h5">me</span></h2>
+            <img class="my-brand" src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50">
           </div>
         </div>
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center mt-5">
           <div class="col-md-8">
             <form class="g-recaptcha" accept-charset="UTF-8" action="https://usebasin.com/f/88cfc6db015b" enctype="multipart/form-data" method="POST">
               <div class="card text-white bg-dark mb-3">
-                <div class="card-header h4 text-left">
-                  <p>Feed my addiction. <span class="h5">Hire me! or send me a message.</span></p>
-                  <!-- <p>If you like my work and have some cool project to work on, just send me direct message or contact me through social sites listed below.</p> -->
+                <div class="card-header text-left">
+                  <h2 class="h4 my-sectiontext">Send <span class="h5">me a message</span></h2>
+                  <p class="h6 my-subtext">Let's work on your dream site. Help feed my addiction.</p>
                 </div>
-                <div class="card-body">
+                <div class="card-body text-right">
                   <div class="row">
                     <div class="col">
                       <div class="form-row">
@@ -277,39 +260,44 @@
                     </div>
                   </div>
                   <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-theme="dark"></div>
-                  <button class="btn btn-secondary text-right" type="submit">Send</button>
+                  <button class="btn btn-secondary" type="submit">Send</button>
                 </div>
               </div>
             </form>
           </div>
         </div>
-        <div class="row justify-content-md-center">
-          <div class="col-md-8 ">
+        <div class="row justify-content-center">
+            <div class="col-md-8 ">
             <div class="form-row">
-              <div class="col">
-                <a class="btn btn-block btn-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="download my CV" download="Adrian Gacayan" href="assets/adrianGacayan.pdf"><i class="fas fa-download"></i> Save my CV</a>
+              <div class="col mt-1">
+                <a class="btn my-rounded btn-block btn-light font-weight-bold" data-toggle="tooltip" data-placement="top" title="download my CV" download="Adrian Gacayan" href="assets/adrianGacayan.pdf"><i class="fas fa-download"></i> Save my CV</a>
               </div>
-              <div class="col">
-                <a class="btn btn-block btn-outline-secondary btn-sm" data-toggle="tooltip" data-placement="top" title="view my CV" href="assets/adrianGacayan.pdf"><i class="fas fa-eye"></i> View my CV</a>
+              <div class="col mt-1">
+                <a class="btn my-rounded btn-block text-secondary btn-outline-light font-weight-bold" data-toggle="tooltip" data-placement="top" title="view my CV" target="_blank" href="assets/adrianGacayan.pdf"><i class="fas fa-eye"></i> View my CV</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="row mt-2">
+        <div class="mt-5 text-center">
+          <a class="contact-social-icon" target="_blank" href="https://www.linkedin.com/in/adrian-gacayan-00087514b/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a class="contact-social-icon" target="_blank" href="https://plus.google.com/u/0/+AdrianGacayan" title="Google+"><i class="fab fa-google-plus-g"></i></a>
+          <a class="contact-social-icon" target="_blank" href="https://github.com/adriatrix" title="Github"><i class="fab fa-github-alt"></i></a>
+          <a class="contact-social-icon" target="_blank" href="https://codepen.io/adriatrix" title="Codepen"><i class="fab fa-codepen"></i></a>
+          <a class="contact-social-icon" target="_blank" href="https://steamcommunity.com/id/adriatrix/" title="Steam"><i class="fab fa-steam"></i></a>
+        </div>
+        <div class="row mt-5">
           <div class="col text-center">
             <p>&copy; 2018 <a class="text-white" target="_blank" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
           </div>
         </div>
-        <div class="mt-2 text-center">
-          <a class="home-social-icon" target="_blank" href="https://www.linkedin.com/in/adrian-gacayan-00087514b/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-          <a class="home-social-icon" target="_blank" href="https://plus.google.com/u/0/+AdrianGacayan" title="Google+"><i class="fab fa-google-plus-g"></i></a>
-          <a class="home-social-icon" target="_blank" href="https://github.com/adriatrix" title="Github"><i class="fab fa-github-alt"></i></a>
-          <a class="home-social-icon" target="_blank" href="https://codepen.io/adriatrix" title="Codepen"><i class="fab fa-codepen"></i></a>
-          <a class="home-social-icon" target="_blank" href="https://steamcommunity.com/id/adriatrix/" title="Steam"><i class="fab fa-steam"></i></a>
+        <div class="row">
+          <div class="col text-center">
+            <p>made with <span style="color:red;"><i class="fas fa-heart"></i></span> and <span style="color:white;"><i class="fas fa-coffee"></i><span>.</p>
+          </div>
         </div>
       </div>
     </div>
-    <!-- end of #section-contact -->
+    <!-- end of #contact -->
 
   </div> <!-- div.container-fluid -->
 
