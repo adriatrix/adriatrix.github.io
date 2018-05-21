@@ -113,7 +113,7 @@ html {
   display: block;
   width: 40px;
   height: 40px;
-  margin: 10px 5px;
+  margin: 7px 5px;
   padding-top: 8px;
   -o-transition:all .5s;
   -webkit-transition: all .5s;
@@ -157,7 +157,7 @@ html {
 .scrollbtn a {
   position: absolute;
   bottom: 0.5%;
-  left : 50%;
+  right: 5.5%;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
@@ -486,10 +486,17 @@ input, textarea {
   /* text-align: center; */
 }
 
+/* portrait devices (height 450px and up) */
+@media only screen and (min-height: 450px) {
+  .scrollbtn a {
+    right: 50%;
+  }
+}
+
 /* Extra Small devices (old-school phones 321px and up) */
 @media only screen and (min-width: 321px) {
   .home-text {
-    width: 100%;
+    width: 80%;
   }
 
   .skill-container {
@@ -508,7 +515,7 @@ input, textarea {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .home-text {
-    width: 80%;
+    width: 70%;
   }
 
   .skill-container {
