@@ -1,33 +1,40 @@
 $( document ).ready(function() {
     console.log( "script ready!" );
 
-    // hide .navbar first
-  	// $(".navbar").hide();
+    $("a.my-links").on('click', function (event) {
 
-  	// fade in .navbar
-  	// $(function () {
-  	// 	$(window).scroll(function () {
-  	// 		if ($(this).scrollTop() > 100) {
-  	// 			$('.navbar').fadeIn();
-  	// 		} else {
-  	// 			$('.navbar').fadeOut();
-  	// 		}
-  	// 	});
-  	// });
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
+
+    //initialize animate on scroll
     AOS.init({
 				easing: 'ease-out-back',
 				duration: 1200
 			});
 
+    // cutomize tooltip
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     });
 
-    $('.navbar-nav').find('a').on('click', function(e){
-      $('.navbar-toggler').trigger('click');
-    });
-
+    //typewriter animation
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;

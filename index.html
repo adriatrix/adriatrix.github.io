@@ -18,20 +18,20 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
   <!-- devicons -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="assets/devicon-master/devicon.css">
 
   <!-- favicon icon -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Noticia+Text|Play|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Play|Raleway" rel="stylesheet">
 
   <!-- aos css -->
-  <link href="assets/aos/aos.css" rel="stylesheet">
+<link rel="stylesheet"  href="assets/aos/aos.css">
 
   <!-- my css -->
-  <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet"  href="css/style.css">
 
   <!-- google recaptcha api -->
   <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
@@ -40,11 +40,11 @@
 <body>
   <div class="container-fluid">
     <!-- start of #home -->
-    <div id="home" class="home-image">
+    <section id="home" class="home-image">
       <a href="index.html">
         <img class="my-brand" src="img/my-brand.png" alt="Adrian Gacayan Ag logo brand" width="50">
       </a>
-      <div class="float-right mt-2">
+      <div class="float-right my-sayhibtn">
         <a href="#contact" class="btn my-rounded text-secondary btn-outline-light font-weight-bold my-links" name="button">Say Hi</a>
       </div>
       <div class="mt-2" data-aos="fade-up" data-aos-easing="ease-in" data-aos-once="true">
@@ -61,11 +61,11 @@
       <div id="scrolldownbtn" class="scrollbtn">
         <a href="#about" class="my-links"><span></span></a>
       </div>
-    </div>
+    </section>
     <!-- end of #home -->
 
     <!-- start of #about  -->
-    <div id="about" class="about-image">
+    <section id="about" class="about-image">
       <div class="row about-profile">
         <div class="col">
           <div class="row justify-content-center">
@@ -139,11 +139,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- end of #about -->
 
     <!-- start of #works -->
-    <div id="works" class="works-image">
+    <section id="works" class="works-image">
       <div class="works-text p-2">
         <div class="row justify-content-md-center">
           <div class="col">
@@ -151,11 +151,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- end of #works -->
 
     <!-- start of #projects -->
-    <div id="projects" class="projects-image">
+    <section id="projects" class="projects-image">
       <div class="row">
         <div class="col">
           &nbsp;
@@ -218,11 +218,11 @@
         </div>
       </div>
       <hr>
-    </div>
+    </section>
     <!-- end of #projects -->
 
     <!-- start of #contact -->
-    <div id="contact" class="contact-image">
+    <section id="contact" class="contact-image">
       <div class="contact-text">
         <div class="row justify-content-center">
           <div class="col text-center">
@@ -285,16 +285,16 @@
         </div>
         <div class="row mt-5">
           <div class="col text-center">
-            <p>&copy; 2018 <a class="text-white" target="_blank" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
+            <p class="h5">&copy; 2018 <a class="text-white" target="_blank" href="https://github.com/adriatrix">Adrian Gacayan</a></p>
           </div>
         </div>
         <div class="row">
           <div class="col text-center">
-            <p>made with <span style="color:red;"><i class="fas fa-heart"></i></span> and <span style="color:white;"><i class="fas fa-coffee"></i><span>.</p>
+            <p class="h6">made with <span style="color:red;"><i class="fas fa-heart"></i></span> and <span style="color:white;"><i class="fas fa-coffee"></i><span>.</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- end of #contact -->
 
   </div> <!-- div.container-fluid -->
@@ -309,33 +309,6 @@
 
   <!-- custom js script -->
   <script src="js/script.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a.my-links").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-  </script>
-
+  
 </body>
 </html>
